@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <style>
+        .footer {
+            display: flex;
+            width: 70%;
+            margin: auto;
+            height: auto;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .left-section {
+            width: 50%;
+            height: 100%;
+        }
+
+        .center-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 45px;
+            margin: 0;
+        }
+
+        .logo-image {
+            display: flex;
+            width: 100%;
+            height: 33%;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .logo-img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .social-section {
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .github-link,
+        .linkedin-link {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .github-icon,
+        .linkedin-icon {
+            width: 40px;
+        }
+
+        .github-text,
+        .linkedin-text {
+            color: rgb(25, 25, 25);
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .github-text,
+        .linkedin-text:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .line {
+            border: 1px solid black;
+            height: 250px;
+            display: flex;
+            width: 0.1px;
+            background-color: black;
+        }
+
+        span {
+            color: #EDD037;
+        }
+
+        .right-section {
+            width: 50%;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .textLogo {
+            width: 70%;
+            font-size: 50px;
+        }
+
+        @media screen and (max-width:950px) {
+            .footer {
+                align-items: center;
+                flex-direction: column;
+                height: auto;
+                margin: auto;
+                width: 95%;
+            }
+
+            .social-section {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                margin: auto;
+                justify-content: center;
+            }
+
+            .left-section {
+                width: 100%;
+            }
+
+            .line {
+                display: none;
+            }
+
+            .right-section {
+                padding: 0;
+                width: 100%;
+            }
+
+            .textLogo {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width:350px) {
+            .social-section {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="left-section">
+            <div class="center-content">
+                <h1 class="logo-text">CalmoMilla</h1>
+            </div>
+            <div class="logo-image">
+                <img class="logo-img"
+                     src="img/CalmoMillaLg.png"
+                     alt="Logo Calmomilla"> <!-- IMAGE lOGO AQUI-->
+            </div>
+            <div class="social-section">
+                <div class="github-link">
+                    <img class="github-icon"
+                         src="img/github-mark.png"
+                         alt="Logo GitHub">
+                    <a class="github-text"
+                       href="https://github.com/CalmoMilla"
+                       target="_blank"> <!-- IMAGE github AQUI-->
+                        <p style="margin: 0; ">GitHub CalmoMilla</p>
+                    </a>
+                </div>
+                <div class="linkedin-link">
+                    <img class="linkedin-icon"
+                         src="img/icone-linkedin-ronde-noire.png"
+                         alt="Logo Linkedin"><!-- IMAGE linkedin AQUI-->
+                    <a class="linkedin-text"
+                       href="https://www.linkedin.com/company/calmomilla/?viewAsMember=true"
+                       target="_blank">
+                        <p>LinkedIn CalmoMilla</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="right-section">
+            <p class="textLogo"> <span>
+                    Mente </span>em dia, a vida em <span>harmonia</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

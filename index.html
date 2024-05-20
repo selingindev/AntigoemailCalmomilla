@@ -7,6 +7,41 @@
           content="width=device-width, initial-scale=1.0">
     <title>Email</title>
     <style>
+        body {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            margin-top: 80px;
+        }
+
+        .welcome {
+            margin: auto;
+            width: 60%;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .welcome H2 {
+            margin: 0;
+        }
+
+        .acessePlataforma {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+
+        .acessePlataforma a {
+
+            color: #EDD037;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
         .footer {
             display: flex;
             width: 70%;
@@ -36,7 +71,7 @@
         .logo-image {
             display: flex;
             width: 100%;
-            height: 33%;
+            height: auto;
             justify-content: center;
             margin-top: 15px;
         }
@@ -103,7 +138,15 @@
             font-size: 50px;
         }
 
+        @media screen and (max-width:1100px) {
+            main {
+                margin-top: 10px;
+            }
+
+        }
+
         @media screen and (max-width:950px) {
+
             .footer {
                 align-items: center;
                 flex-direction: column;
@@ -137,6 +180,14 @@
                 width: 100%;
             }
 
+            .welcome {
+                width: 90%;
+            }
+
+            .welcome h2 {
+                width: 100%;
+                margin: 0;
+            }
         }
 
         @media screen and (max-width:350px) {
@@ -148,6 +199,16 @@
 </head>
 
 <body>
+    <main>
+        <div class="welcome">
+            <h2> Olá , seja Bem-Vindo(a) ao CalmoMilla, agradecemos a cofiança por se inscrever em nossa plataforma.
+            </h2>
+        </div>
+        <div class="acessePlataforma">
+            <a href="">Clique aqui para acessar a plataforma.</a>
+        </div>
+    </main>
+
     <footer class="footer">
         <div class="left-section">
             <div class="center-content">
